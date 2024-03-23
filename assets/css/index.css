@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.layer-item{
+    position: absolute;
+    inset: -5vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.layers-container {
+    height: 100vh;
+    transform-style: preserve-3d;
+    will-change: transform;
+    perspective: 1000px;
+}
+
+.item1{
+    transform: translateZ(-100px);
+    }
+.item2{
+    transform: translateZ(200px);
+}
+.item3{  transform: translateZ(400px);
+}
+.item4{  transform: translateZ(500px);
+}
+.item5{  transform: translateZ(300px);
+}
+.item6{  transform: translateZ(350px);
+}
