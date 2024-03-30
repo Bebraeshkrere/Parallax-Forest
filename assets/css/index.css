@@ -8,6 +8,7 @@
     inset: -5vw;
     background-size: cover;
     background-position: center;
+    pointer-events: none;
 }
 
 .layers-container {
@@ -18,16 +19,35 @@
 }
 
 .item1{
-    transform: translateZ(-100px);
+    transform: translateZ(-100px) scale(1.1);
     }
 .item2{
     transform: translateZ(200px);
 }
-.item3{  transform: translateZ(400px);
+.item3{  
+    transform: translateZ(400px);
 }
-.item4{  transform: translateZ(500px);
+.item4{  
+    transform: translateZ(500px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: all;
 }
-.item5{  transform: translateZ(300px);
+.item5{  
+    transform: translateZ(300px);
 }
-.item6{  transform: translateZ(350px);
+.item6{  
+    transform: translateZ(350px);
+}
+
+.logo {
+    width: 60px;
+    height: 150px;
+    flex-direction: column ;
+}
+.btn-sound{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
